@@ -1,0 +1,30 @@
+{"id": "q01", "question": "Compare INT8 vs FP16 quantization and explain the trade-offs.", "dimensions": ["accuracy impact", "latency", "hardware support"]}
+{"id": "q02", "question": "Compare Random Forest vs Gradient Boosting and explain the trade-offs.", "dimensions": ["bias-variance", "training speed", "interpretability"]}
+{"id": "q03", "question": "Compare BM25 vs dense retrieval and explain the trade-offs.", "dimensions": ["recall", "precision", "cost"]}
+{"id": "q04", "question": "Compare LSTM vs Transformer for time series and explain the trade-offs.", "dimensions": ["long-range dependencies", "training cost", "inference latency"]}
+{"id": "q05", "question": "Compare structured vs unstructured pruning and explain the trade-offs.", "dimensions": ["hardware speedup", "accuracy recovery", "implementation effort"]}
+{"id": "q06", "question": "Compare SMOTE vs class weighting and explain the trade-offs.", "dimensions": ["minority recall", "overfitting risk", "leakage risk"]}
+{"id": "q07", "question": "Compare Docker vs bare-metal for ML serving and explain the trade-offs.", "dimensions": ["isolation", "startup latency", "resource overhead"]}
+{"id": "q08", "question": "Compare batch vs streaming inference and explain the trade-offs.", "dimensions": ["throughput", "tail latency", "complexity"]}
+{"id": "q09", "question": "Compare Isolation Forest vs LSTM autoencoder and explain the trade-offs.", "dimensions": ["detection quality", "training data needs", "latency"]}
+{"id": "q10", "question": "Compare operator fusion vs kernel autotuning and explain the trade-offs.", "dimensions": ["speedup", "portability", "engineering cost"]}
+{"id": "q11", "question": "Compare PTQ vs QAT and explain the trade-offs.", "dimensions": ["accuracy", "training cost", "deployment effort"]}
+{"id": "q12", "question": "Compare round-robin vs least-loaded routing and explain the trade-offs.", "dimensions": ["tail latency", "fairness", "implementation cost"]}
+{"id": "q13", "question": "Compare FAISS flat vs IVF index and explain the trade-offs.", "dimensions": ["recall", "query latency", "memory"]}
+{"id": "q14", "question": "Compare cross-encoder vs bi-encoder reranking and explain the trade-offs.", "dimensions": ["accuracy", "latency", "scalability"]}
+{"id": "q15", "question": "Compare RMSE vs C-MAPSS score for RUL and explain the trade-offs.", "dimensions": ["safety alignment", "interpretability", "sensitivity"]}
+{"id": "q16", "question": "Compare feature selection vs regularization and explain the trade-offs.", "dimensions": ["overfitting control", "interpretability", "compute"]}
+{"id": "q17", "question": "Compare data parallelism vs model parallelism and explain the trade-offs.", "dimensions": ["memory", "communication overhead", "scaling limit"]}
+{"id": "q18", "question": "Compare A/B testing vs bandits and explain the trade-offs.", "dimensions": ["sample efficiency", "regret", "implementation"]}
+{"id": "q19", "question": "Compare cosine vs euclidean similarity and explain the trade-offs.", "dimensions": ["scale sensitivity", "retrieval quality", "compute"]}
+{"id": "q20", "question": "Compare early stopping vs fixed epochs and explain the trade-offs.", "dimensions": ["generalization", "compute", "reproducibility"]}
+{"id": "q21", "question": "Compare greedy vs beam search decoding and explain the trade-offs.", "dimensions": ["quality", "latency", "diversity"]}
+{"id": "q22", "question": "Compare static vs dynamic batching and explain the trade-offs.", "dimensions": ["throughput", "latency", "complexity"]}
+{"id": "q23", "question": "Compare SHAP vs permutation importance and explain the trade-offs.", "dimensions": ["fidelity", "compute cost", "bias"]}
+{"id": "q24", "question": "Compare z-score vs IQR outlier detection and explain the trade-offs.", "dimensions": ["robustness", "assumptions", "simplicity"]}
+{"id": "q25", "question": "Compare mean vs median imputation and explain the trade-offs.", "dimensions": ["bias", "variance", "robustness to outliers"]}
+{"id": "q26", "question": "Compare gRPC vs REST for inference and explain the trade-offs.", "dimensions": ["latency", "streaming support", "tooling"]}
+{"id": "q27", "question": "Compare prompt caching vs fine-tuning and explain the trade-offs.", "dimensions": ["cost", "latency", "flexibility"]}
+{"id": "q28", "question": "Compare CPU vs GPU quantized inference and explain the trade-offs.", "dimensions": ["throughput", "cost", "backend support"]}
+{"id": "q29", "question": "Compare stratified vs random CV split and explain the trade-offs.", "dimensions": ["variance", "leakage risk", "small-data reliability"]}
+{"id": "q30", "question": "Compare reciprocal rank fusion vs score fusion and explain the trade-offs.", "dimensions": ["robustness", "calibration need", "simplicity"]}

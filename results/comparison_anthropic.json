@@ -1,0 +1,75 @@
+{
+  "config": {
+    "backend": "anthropic",
+    "worker_model": "claude-haiku-4-5",
+    "planner_model": "claude-opus-4-8",
+    "judge_model": "claude-haiku-4-5",
+    "judge_prompt_version": "v1",
+    "critic_enabled": true,
+    "n_questions": 30
+  },
+  "calibration": {
+    "n": 60,
+    "axes": {
+      "coverage": {
+        "cohen_kappa": 1.0,
+        "accuracy": 1.0,
+        "trustworthy": true
+      },
+      "grounding": {
+        "cohen_kappa": 0.08088235294117639,
+        "accuracy": 0.5833333333333334,
+        "trustworthy": false
+      },
+      "structure": {
+        "cohen_kappa": 1.0,
+        "accuracy": 1.0,
+        "trustworthy": true
+      },
+      "no_halluc": {
+        "cohen_kappa": 1.0,
+        "accuracy": 1.0,
+        "trustworthy": true
+      }
+    },
+    "trustworthy_axes": [
+      "coverage",
+      "structure",
+      "no_halluc"
+    ]
+  },
+  "single_agent": {
+    "quality_trusted_axes_mean": 0.9444444444444444,
+    "quality_std": 0.12422599874998833,
+    "avg_cost": 0.030756166666666668,
+    "avg_tokens": 1351.2333333333333,
+    "latency_p50_s": 16.798312166996766,
+    "latency_p95_s": 18.672899131552548
+  },
+  "multi_agent": {
+    "quality_trusted_axes_mean": 0.9555555555555556,
+    "quality_std": 0.14229164972072997,
+    "avg_cost": 0.0921016,
+    "avg_tokens": 8466.533333333333,
+    "latency_p50_s": 48.25964500101691,
+    "latency_p95_s": 52.06144951958849
+  },
+  "comparison": {
+    "quality_lift_trusted_axes": 0.011111111111111183,
+    "cost_multiple": 2.994573445975604,
+    "token_multiple": 6.265781878284036,
+    "trusted_axes": [
+      "coverage",
+      "structure",
+      "no_halluc"
+    ]
+  },
+  "reliability": {
+    "multi_completed_clean": 12,
+    "critic_triggered": 22,
+    "revisions": 40,
+    "cost_cap": 0,
+    "revision_cap": 18,
+    "multi_completed_clean_pct": 40.0
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "config": {
+    "backend": "mock",
+    "worker_model": "claude-haiku-4-5",
+    "planner_model": "claude-opus-4-8",
+    "judge_model": "claude-opus-4-8",
+    "judge_prompt_version": "v1",
+    "critic_enabled": true,
+    "n_questions": 30
+  },
+  "calibration": {
+    "n": 50,
+    "axes": {
+      "coverage": {
+        "cohen_kappa": 1.0,
+        "accuracy": 1.0,
+        "trustworthy": true
+      },
+      "grounding": {
+        "cohen_kappa": 0.0,
+        "accuracy": 0.68,
+        "trustworthy": false
+      },
+      "structure": {
+        "cohen_kappa": 1.0,
+        "accuracy": 1.0,
+        "trustworthy": true
+      },
+      "no_halluc": {
+        "cohen_kappa": 1.0,
+        "accuracy": 1.0,
+        "trustworthy": true
+      }
+    },
+    "trustworthy_axes": [
+      "coverage",
+      "structure",
+      "no_halluc"
+    ]
+  },
+  "single_agent": {
+    "quality_trusted_axes_mean": 0.6555555555555556,
+    "quality_std": 0.23544022333796769,
+    "avg_cost": 0.0010561666666666666,
+    "avg_tokens": 77.36666666666666,
+    "latency_p50_s": 2.3750035325065255e-06,
+    "latency_p95_s": 3.668600402306766e-06
+  },
+  "multi_agent": {
+    "quality_trusted_axes_mean": 0.6555555555555556,
+    "quality_std": 0.29165343885348194,
+    "avg_cost": 0.003793766666666667,
+    "avg_tokens": 560.7,
+    "latency_p50_s": 1.4645491319242865e-05,
+    "latency_p95_s": 2.1587200899375605e-05
+  },
+  "comparison": {
+    "quality_lift_trusted_axes": 0.0,
+    "cost_multiple": 3.5920151491241916,
+    "token_multiple": 7.247307195174495,
+    "trusted_axes": [
+      "coverage",
+      "structure",
+      "no_halluc"
+    ]
+  },
+  "reliability": {
+    "multi_completed_clean": 21,
+    "critic_triggered": 9,
+    "revisions": 18,
+    "cost_cap": 0,
+    "revision_cap": 9,
+    "multi_completed_clean_pct": 70.0
+  }
+}
